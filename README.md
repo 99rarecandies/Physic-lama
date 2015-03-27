@@ -2,12 +2,15 @@
 
 
 Type: rogue-like / rpg / platformer
+
 setting: medieval / fantasy
 
 game functions: power-ups / weapons / armor / 
 
 Classes - archetype: Warrior / Mage / Hunter
+
 Classes - subtypes: 
+
 UI - elements: Health / Mana
 
 Combat system: Melee / Range / Magic / 
@@ -41,4 +44,5 @@ Lenght:
 Crafting:?
 
 First steps: 
+
 Consistant hub > NPC > player model > 

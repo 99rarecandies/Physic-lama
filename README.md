@@ -2,12 +2,14 @@
 ==============
 
 
--Atomic Elements:
-  * Players:
+### Atomic Elements:
+---
+  * <b>Players:</b>
     - 1 vs gs?
     - [0-9]* vs gs?
-
-  * Objectives:
+    
+---
+  * <b>Objectives:</b>
     - Capture/destroy
     - Territorial control
     - Collection
@@ -15,8 +17,9 @@
     - Chase/escape/(race)
     - Build
     - ...
-
-  * Rules:
+    
+---
+  * <b>Rules:</b>
     - Setup:
       + Class Selection
       + Consistent Hub
@@ -30,8 +33,9 @@
     - Resolution:
       + Perma-death
       + Kill End-boss
-
-  * Resources and Resource Management:
+      
+---
+  * <b>Resources and Resource Management:</b>
     - Money
     - Class resources:
       + Mana
@@ -45,8 +49,9 @@
     - Time
     - Clues
     - Items
-
-  * Game State:
+    
+---
+  * <b>Game State:</b>
     - Power-ups
     - Weapons
     - Armor
@@ -74,33 +79,38 @@
       + Visual
       + Audio
     - UI-elements
-
-  * Information: (what does the player know)
+    
+---
+  * <b>Information: (what does the player know)</b>
     - Total Information
     - Private Information
     - Privileged Information
     - Hidden Information
     - "Fog Of War"
-
-  * Sequencing:
+    
+---
+  * <b>Sequencing:</b>
     - Turn-based
     - Turn-based, with simultaneous play
     - Real-time
     - ...
-
-  * Player Interaction:
+    
+---
+  * <b>Player Interaction:</b>
     - Direct conflict
     - Negotiation
     - Trading
     - Information sharing
-
-  * Theme: (Narrative, Backstory, Setting)
+    
+---
+  * <b>Theme: (Narrative, Backstory, Setting)</b>
     - Rogue-like
     - RPG
     - Medieval
     - Fantasy
-
-  * Systems
+    
+---
+  * <b>Systems</b>
     - Windows
     - 2D Platformer
     - Combat

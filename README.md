@@ -1,48 +1,114 @@
 # Physic-lama
+==============
 
 
-Type: rogue-like / rpg / platformer
+-Atomic Elements:
+  * Players:
+    - 1 vs gs?
+    - [0-9]* vs gs?
 
-setting: medieval / fantasy
+  * Objectives:
+    - Capture/destroy
+    - Territorial control
+    - Collection
+    - Puzzle solving
+    - Chase/escape/(race)
+    - Build
+    - ...
 
-game functions: power-ups / weapons / armor / 
+  * Rules:
+    - Setup:
+      + Class Selection
+      + Consistent Hub
 
-Classes - archetype: Warrior / Mage / Hunter
+    - Progression of play: (during the game)
+      + Player Levels
+      + Money
+      + Items
+      + ...
 
-Classes - subtypes: 
+    - Resolution:
+      + Perma-death
+      + Kill End-boss
 
-UI - elements: Health / Mana
+  * Resources and Resource Management:
+    - Money
+    - Class resources:
+      + Mana
+      + Rage
+      + Focus
+      + ...
+    - Crafting
+    - Building
+    - Quests
+    - Game Levels
+    - Time
+    - Clues
+    - Items
 
-Combat system: Melee / Range / Magic / 
+  * Game State:
+    - Power-ups
+    - Weapons
+    - Armor
+    - Classes:
+      + Warrior
+      + Mage
+      + Hunter
+    - Combat system:
+      + Melee
+      + Range
+      + Magic
+    - Enemies:
+      + ...
+    - Game Levels:
+      + ...
+    - NPC's
+    - Story:
+      + Dialogue
+      + See THEME
+    - Tutorial
+    - World Design
+    - Leveling System
+    - Controls
+    - Art:
+      + Visual
+      + Audio
+    - UI-elements
 
-Enemies:
+  * Information: (what does the player know)
+    - Total Information
+    - Private Information
+    - Privileged Information
+    - Hidden Information
+    - "Fog Of War"
 
-Goals:
+  * Sequencing:
+    - Turn-based
+    - Turn-based, with simultaneous play
+    - Real-time
+    - ...
 
-Story: 
+  * Player Interaction:
+    - Direct conflict
+    - Negotiation
+    - Trading
+    - Information sharing
 
-Dialogue: 
+  * Theme: (Narrative, Backstory, Setting)
+    - Rogue-like
+    - RPG
+    - Medieval
+    - Fantasy
 
-Devices: Windows 
+  * Systems
+    - Windows
+    - 2D Platformer
+    - Combat
+    - Quests?
+    - Chat
+    - Physical (projectile motion)
+    - ...
 
-Perma-death? \ consistant hub
+First steps:
 
-Tutorial
-
-World Design: 
-
-Leveling System:
-
-Controls:
-
-Visual:
-
-Audio:
-
-Lenght:
-
-Crafting:?
-
-First steps: 
-
-Consistant hub > NPC > player model > 
+Consistant hub > NPC > player model >

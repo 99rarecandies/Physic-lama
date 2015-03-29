@@ -46,10 +46,22 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\NewBehaviourScript.cs" />
-     <None Include="Assets\New Text Document.txt" />
+     <Compile Include="Assets\Fabric\Scripts\FabricSpringBoard.cs" />
+     <None Include="Assets\Fabric\Readme.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="Fabric.AudioSpline">
+ <HintPath>C:/Users/Jack/Documents/Github/Physic-lama/Physic-lama/Assets/Fabric/Fabric.AudioSpline.dll</HintPath>
+ </Reference>
+ <Reference Include="Fabric.Core">
+ <HintPath>C:/Users/Jack/Documents/Github/Physic-lama/Physic-lama/Assets/Fabric/Fabric.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Fabric.LoudnessMeter">
+ <HintPath>C:/Users/Jack/Documents/Github/Physic-lama/Physic-lama/Assets/Fabric/Fabric.LoudnessMeter.dll</HintPath>
+ </Reference>
+ <Reference Include="Fabric.ModularSynth">
+ <HintPath>C:/Users/Jack/Documents/Github/Physic-lama/Physic-lama/Assets/Fabric/Fabric.ModularSynth.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

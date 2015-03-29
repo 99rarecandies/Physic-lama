@@ -53,11 +53,11 @@ public class PlatformManager : MonoBehaviour
 		{
 			for( int y=0; y<rows; y++)
 			{
-				GameObject toInstantiate = floorTiles[Random.Range (0, floorTiles.length)];
+				GameObject toInstantiate = floorTiles[Random.Range (0, floorTiles.Length)];
 				if ( x == 0 )
 					toInstantiate = outerWallTiles[Random.Range(0, outerWallTiles.Length)];
 
-				GameObject instance = Instantiate(toInstantiate, new Vector3 (x,y,0f), quaternion.identity) as GameObject;
+				GameObject instance = Instantiate(toInstantiate, new Vector3 (x,y,0f), Quaternion.identity) as GameObject;
 			}
 		}
 	}

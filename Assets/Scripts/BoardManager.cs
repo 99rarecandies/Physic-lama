@@ -19,17 +19,14 @@ public class BoardManager : MonoBehaviour
 		}
 	 }
 
-	public int columns = 8;
+	public int columns = 20;
 	public int rows = 8;
 	public Count wallCount = new Count(4,9);
 	public Count foodcount = new Count(1,5);
 	public GameObject exit;
 	public GameObject[] floorTiles;
-	public GameObject[] wallTiles;
-	public GameObject[] foodTiles;
 	public GameObject[] enemyTiles;
-	public GameObject[] outerWallTiles;
-
+	public GameObject[] skyTiles;
 	private Transform boardHolder;
 	private List <Vector3> gridPositions = new List<Vector3>();
 
@@ -37,10 +34,8 @@ public class BoardManager : MonoBehaviour
 	{
 		gridPositions.Clear();
 
-		for (int x = 0; x < columns; x++)
-		{
-			for( int y=0; y<rows; y++)
-			{
+		for (int x=0; x < columns; x++){
+			for(int y=0; y < rows; y++){
 				gridPositions.Add(new Vector3(x,y,0f));
 			}
 		}
@@ -56,11 +51,16 @@ public class BoardManager : MonoBehaviour
 			for( int y=0; y<rows; y++)
 			{
 				GameObject toInstantiate = floorTiles[Random.Range (0, floorTiles.Length)];
-				if ( y == 0 )
-					toInstantiate = outerWallTiles[Random.Range(0, outerWallTiles.Length)];
-
-				GameObject instance = Instantiate(toInstantiate, new Vector3 (x,y,0f), Quaternion.identity) as GameObject;
-				instance.transform.SetParent (boardHolder);
+				if ( y == 0 || y == 1 ){
+					toInstantiate = floorTiles[Random.Range(0, floorTiles.Length)];
+					GameObject instance = Instantiate(toInstantiate, new Vector3 (x,y,0f), Quaternion.identity) as GameObject;
+					instance.transform.SetParent (boardHolder);
+					}
+				else{
+					toInstantiate = skyTiles[Random.Range(0, skyTiles.Length)];
+					GameObject instance = Instantiate(toInstantiate, new Vector3 (x,y,0f), Quaternion.identity) as GameObject;
+					instance.transform.SetParent (boardHolder);
+					}
 			}
 		}
 	}
@@ -94,7 +94,7 @@ public class BoardManager : MonoBehaviour
 		//LayoutObjectAtRandom (foodTiles, foodcount.minimum, foodcount.maximum);
 		int enemyCount = (int)Mathf.Log (level, 2f);
 		//LayoutObjectAtRandom (enemyTiles, enemyCount, enemyCount);
-		Instantiate (exit, new Vector3 (columns-1, 0, 0f), Quaternion.identity);
+		Instantiate (exit, new Vector3 (columns-1, 1, 0f), Quaternion.identity);
 
 	}
 
